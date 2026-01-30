@@ -1,6 +1,23 @@
 # 📍 Simple Location Tracker App
 
-A simple Android app that shows your real-time GPS location on a map using OpenStreetMap.
+A location tracker app that shows your real-time GPS location on a map using OpenStreetMap.
+
+## 📦 Available Versions
+
+This project has **TWO versions**:
+
+1. **Native Android** (Kotlin) - `SimpleLocationTrackerApp/`
+   - Android only
+   - Native performance
+   - Best for learning Android development
+
+2. **Cross-Platform** (Flutter) - `LocationTrackerFlutter/`
+   - ✅ **Works on Android AND iOS**
+   - Single codebase
+   - Faster development
+   - **Recommended for cross-platform needs**
+
+Choose the version that fits your needs!
 
 ## ✨ Features
 
@@ -12,18 +29,25 @@ A simple Android app that shows your real-time GPS location on a map using OpenS
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Android Studio
-- Android device or emulator
+### Native Android Version
 
-### Installation
-1. Clone this repository
-2. Open in Android Studio
-3. Click Run ▶️
-4. Grant location permission
-5. Done! 🎉
+**Location**: `SimpleLocationTrackerApp/`
 
-**That's it!** No API key, no payment info, no setup required.
+1. Open in Android Studio
+2. Click Run ▶️
+3. Grant location permission
+4. Done! 🎉
+
+### Flutter Version (Android + iOS)
+
+**Location**: `LocationTrackerFlutter/`
+
+1. Install Flutter SDK
+2. Run `flutter pub get`
+3. Run `flutter run`
+4. Done! 🎉
+
+See each folder's README for detailed instructions.
 
 ## 🔐 Permissions
 
@@ -41,10 +65,19 @@ A simple Android app that shows your real-time GPS location on a map using OpenS
 
 ## 🛠️ Tech Stack
 
+### Native Android Version
 - **Language**: Kotlin
 - **Maps**: OSMDroid (OpenStreetMap)
 - **Location**: Google Play Services Location API
 - **Min SDK**: Android 7.0 (API 24)
+- **Platform**: Android only
+
+### Flutter Version
+- **Language**: Dart
+- **Framework**: Flutter 3.0+
+- **Maps**: flutter_map (OpenStreetMap)
+- **Location**: geolocator package
+- **Platforms**: Android + iOS
 
 ## 📸 Screenshots
 
@@ -62,21 +95,33 @@ Add these 3 screenshots before submitting:
 | App crashes | Grant location permission |
 | Location not updating | Go outside for better GPS signal |
 
-## 🗺️ Why OpenStreetMap?
+## 🆚 Which Version Should I Use?
 
-✅ **100% FREE** - No payment needed
-✅ **No API Key** - Works immediately  
-✅ **No Limits** - Unlimited usage
-✅ **Open Source** - Community-driven
-✅ **Perfect for Students** - No setup hassle
+| Feature | Native Android | Flutter |
+|---------|---------------|---------|
+| **Platforms** | Android only | Android + iOS |
+| **Language** | Kotlin | Dart |
+| **Setup Time** | 2 minutes | 5 minutes |
+| **Performance** | Native | Near-native |
+| **Learning** | Android dev | Cross-platform dev |
+| **Best For** | Android-only projects | Multi-platform apps |
+
+**Recommendation**: 
+- Need iOS support? → Use **Flutter version**
+- Android only? → Either works, **Native** is simpler
+- Learning cross-platform? → Use **Flutter version**
 
 ## 📚 Documentation
 
-For more details, check the `documents/` folder:
+### Native Android Version
+- [Android App README](SimpleLocationTrackerApp/README.md)
 - [Quick Start Guide](documents/QUICK_START.md)
 - [Setup Guide](documents/SETUP_GUIDE.md)
 - [Troubleshooting](documents/TROUBLESHOOTING.md)
-- [Requirements Checklist](documents/LAB_REQUIREMENTS_CHECKLIST.md)
+
+### Flutter Version
+- [Flutter App README](LocationTrackerFlutter/README.md)
+- [Flutter Setup Guide](LocationTrackerFlutter/SETUP_GUIDE.md)
 
 ## 📝 Before Submitting
 
